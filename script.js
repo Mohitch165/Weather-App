@@ -1,15 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const cityInput = document.getElementById("city-input");
-    const getWeatherBtn = document.getElementById("get-weather-btn");
-    const weatherInfo = document.getElementById("weather-info");
-    const cityNameDisplay = document.getElementById("city-name");
-    const temperatureDisplay = document.getElementById("temperature");
-    const descriptionDisplay = document.getElementById("description");
-    const feelsLikeDisplay = document.getElementById("feels-like");
-    const iconDisplay = document.getElementById("icon");
-    const errorMessage = document.getElementById("error-message");
+require('dotenv').config();
+import { cityInput, getWeatherBtn, weatherInfo, cityNameDisplay, temperatureDisplay, descriptionDisplay, feelsLikeDisplay, iconDisplay, errorMessage } from "./elements.js";
 
-    const API_KEY = "ced7776227de7203a76aab3afcbd720c";
+document.addEventListener("DOMContentLoaded", () => {
+    const API_KEY = process.env.API_KEY;
 
     getWeatherBtn.addEventListener("click", async () => {
         const city = cityInput.value.trim();
