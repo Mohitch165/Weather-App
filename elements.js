@@ -1,9 +1,0 @@
-export const cityInput = document.getElementById("city-input");
-export const getWeatherBtn = document.getElementById("get-weather-btn");
-export const weatherInfo = document.getElementById("weather-info");
-export const cityNameDisplay = document.getElementById("city-name");
-export const temperatureDisplay = document.getElementById("temperature");
-export const descriptionDisplay = document.getElementById("description");
-export const feelsLikeDisplay = document.getElementById("feels-like");
-export const iconDisplay = document.getElementById("icon");
-export const errorMessage = document.getElementById("error-message");
